@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+       
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/stylesx.css">
+
+        <title>Responsive watches website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="http://localhost/PROJETO_SESE/tela_feed" class="nav__logo">
+                    <i class='bx bxs-camera-movie nav__logo-icon'></i> Sese
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio da loja</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Destaques</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Ingressos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">DVD's</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bxs-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">My Cart</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/xfeatured1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Elementos de Onny</h3>
+                        <span class="cart__price">$50</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/xfeatured2.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Siara</h3>
+                        <span class="cart__price">R$50</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/xnew1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Show de vizinha (2004)</h3>
+                        <span class="cart__price">R$92</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">R$192</span>
+            </div>
+        </div>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="assets/img/xhome.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            Twitter
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Camisa oficial <br> SESSÃO CINEMA
+                        </h1>
+                        <p class="home__description">
+                            Novo lançamento oficial do Sessão Cinema!!! A nossa blusa oficial da Marca chegou as lojas hoje mesmo e você já pode adquirir.
+                        </p>
+                        <span class="home__price">R$250</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                Mais opções
+                            </a>
+
+                            <button class="button home__button">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Destaques
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Destaque</span>
+
+                        <img src="assets/img/xfeatured1.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Elementos de Onny</h3>
+                            <span class="featured__price">R$50</span>
+                        </div>
+
+                        <button class="button featured__button">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Destaque</span>
+
+                        <img src="assets/img/xfeatured2.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Siara</h3>
+                            <span class="featured__price">R$50</span>
+                        </div>
+
+                        <button class="button featured__button">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Destaque</span>
+
+                        <img src="assets/img/xfeatured3.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">EDO: Os segredos de Bella</h3>
+                            <span class="featured__price">R$50</span>
+                        </div>
+
+                        <button class="button featured__button">
+                           ADICIONAR AO CARRINHO
+                        </button>
+                    </article>
+                </div>
+                
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            NOSSA MARCA
+                        </h2>
+
+                        <h1 class="story__title">
+                            A MAIOR PLATAFORMA DE CINEMA DO <br> BRASIL
+                        </h1>
+
+                        <p class="story__description">
+                            O PROJETO SESE NASCEU DENTRO DO SESSÃO CINEMA COM O INTUITO DE SER A MAIOR PLATAFORMA DE CINEMA DO BRASIL. A REDE SOCIAL JÁ ESTÁ ENTRE NÓS!!! E AGORA, VENHAM COMIGO PARA A LOGA OFICIAL DO SESE.
+                        </p>
+
+                        <a href="#" class="button button--small">CONHECER A LOJA</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/Xxstory.png" alt="" class="story__img" style="position: relative; top: 15rem;">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    INGRESSOS
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/xproduct1.png" alt="" class="products__img">
+
+                        <h3 class="products__title">THOR: lOVE E THUNDER</h3>
+                        <span class="products__price">R$38</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/xproduct2.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Elvis</h3>
+                        <span class="products__price">R$38</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/xproduct3.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Pets - DC liga da justiça</h3>
+                        <span class="products__price">R$38</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/xproduct4.png" alt="" class="products__img">
+
+                        <h3 class="products__title">After - Depois da esperança</h3>
+                        <span class="products__price">R$38</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/xproduct5.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Adão Negro</h3>
+                        <span class="products__price">R$38</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                                        <article class="products__card">
+                        <img src="assets/img/xproduct6.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Creed 3</h3>
+                        <span class="products__price">R$38</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+
+                                <p class="testimonial__description">
+Meus filhos partiram meses atrás, mas cinema me lembra deles. SESE me ajudou a amenizar a dor da partida dos meus garotos e do meu marido Vis.                                </p>
+                                <h3 class="testimonial__date">04 de Abril de 2022</h3>
+
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/xtestimonial1.jpg" alt="" class="testimonial__perfil-img">
+
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial_perfil-name">Wanda Maximoff</span>
+                                        <span class="testimonial_perfil-name">Feiticeira</detail>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+
+                                <p class="testimonial__description">
+Eu sempre quis encontrar pessoas como eu, com gostos parecidos, como eu, e eu finalmente encontrei. Foi muito bom ver que existem que compartilham as mesmas experiências que eu. O cinema é magico e eu tive uma experiência com o SESE.
+                                </p>
+                                <h3 class="testimonial__date">15 de Dezembro de 2021</h3>
+
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/xtestimonial2.jpg" alt="" class="testimonial__perfil-img">
+
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial_perfil-name">Peter P.</span>
+                                        <span class="testimonial_perfil-name">Fotografo</detail>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+
+                                <p class="testimonial__description">
+                                   Rapaz...
+ Eu tenho uma teoria.                                </p>
+                                <h3 class="ttestimonial__date"> 01 de Abril de 2022</h3>
+
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/xtestimonial4.jpg" alt="" class="testimonial__perfil-img">
+
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial_perfil-name">Peter</span>
+                                        <span class="testimonial_perfil-name">Gerador de Fake News</detail>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                    <div class="testimonial__images">
+                        <img src="assets/img/xtestimonial.png" alt="" class="testimonial__img">
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__tilte">
+                    DVD'S
+                </h2>
+
+
+               <div class="new__container">
+                   <div class="swiper new-swiper">
+                       <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <spa class="new__tag">DVD</spa>
+
+                                <img src="assets/img/xnew1.png" alt="" class="new__img">
+
+                                <div class="new__data">
+                                    <h3 class="new__title">Show de Vizinha (2004)</h3>
+                                    <span class="new__price">R$92</span>
+                                </div>
+
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <spa class="new__tag">DVD</spa>
+
+                                <img src="assets/img/xnew2.png" alt="" class="new__img">
+
+                                <div class="new__data">
+                                    <h3 class="new__title">Amor estranho amor (1982)</h3>
+                                    <span class="new__price">R$190</span>
+                                </div>
+
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <spa class="new__tag">DVD</spa>
+
+                                <img src="assets/img/xnew3.png" alt="" class="new__img">
+
+                                <div class="new__data">
+                                    <h3 class="new__title">365 DNI (2020)</h3>
+                                    <span class="new__price">R$69</span>
+                                </div>
+
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <spa class="new__tag">DVD</spa>
+
+                                <img src="assets/img/xnew4.png" alt="" class="new__img">
+
+                                <div class="new__data">
+                                    <h3 class="new__title">Uma comedia nada... (2006)</h3>
+                                    <span class="new__price">R$77</span>
+                                </div>
+
+                                <button class="button new__button">COMPRAR</button>
+                            </article>
+                       </div>
+                   </div>
+               </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">
+                            INSCREVA-SE E RECEBA <br> TODAS AS NOVIDADES
+                        </h2>
+                        <p class="newsletter__description">
+                            Novos produtos, lançamentos, projetos, novidades sobre o projeto SESE, novos links, novos apetrechos, tudo você encontra apenas deixando seu E-mail aqui.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Digite seu E-mail" class="newsletter__input">
+                        <button class="button">
+                            ENVIAR
+                        </button>
+                    </form>
+                </div>
+                
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">NOSSOS CONTATOS</h3>
+
+                    <ul class="footer__list">
+                        <li>Iury&nbsp&nbsp&nbsp - (81)993981156</li>
+                        <li>Higor - (81)9167-7675</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">INFORMAÇÕES DO PROJETO</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                        <a href="#" class="footer__link">Faculdade ELO</a>
+                        </li>
+                    </ul>
+                        <li>
+                        <a href="#" class="footer__link">5º Periodo</a>
+                        </li>
+                    </ul>
+                        <li>
+                         <a href="#" class="footer__link">Professor: Giani</a>
+                        </li>
+                    </ul>
+                        <li>
+                        <a href="#" class="footer__link">SINCE 2020</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Produtos</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                        <a href="#" class="footer__link">Livros</a>
+                        </li>
+                        <li>
+                        <a href="#" class="footer__link">Ingressos</a>
+                        </li>
+                        <li>
+                         <a href="#" class="footer__link">DVD's</a>
+                        </li>
+                        <li>
+                        <a href="#" class="footer__link">Camisas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; PROJETO SESE. TODOS OS DIREITOS RESERVADOS</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+        
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
